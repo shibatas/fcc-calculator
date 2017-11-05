@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Calculator</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <h1 class = "title">Calculator</h1>
+  <div class = "calculator">
+    <div class = "row">
+      <div class = "col output">
+        <h1 class = "result">0</h1>
+        <p class = "subtext"></p>
+      </div>
+    </div>
+    <div class = "row">
+      <div class = "col">
+        <button class = "btn btn-warning" onclick="allClear()">AC</button>
+      </div>
+      <div class = "col">
+        <button class = "btn btn-warning" onclick="clearEntry()">CE</button>
+      </div>
+    </div> <!--AC and CE buttons-->
+
+    <div class = "row">
+      <div class = "col">
+        <button class = "btn btn-default" onclick="getInput('7')">7</button>
+      </div>
+      <div class = "col">
+        <button class = "btn btn-default" onclick="getInput('8')">8</button>
+      </div>
+      <div class = "col">
+        <button class = "btn btn-default" onclick="getInput('9')">9</button>
+      </div>
+      <div class = "col">
+        <button class = "btn btn-default" onclick="getInput('/')">/</button>
+      </div>
+    </div> <!--buttons 7 8 9 / -->
+
+    <div class = "row">
+      <div class = "col">
+        <button class = "btn btn-default" onclick="getInput('4')">4</button>
+      </div>
+      <div class = "col">
+        <button class = "btn btn-default" onclick="getInput('5')">5</button>
+      </div>
+      <div class = "col">
+        <button class = "btn btn-default" onclick="getInput('6')">6</button>
+      </div>
+      <div class = "col">
+        <button class = "btn btn-default" onclick="getInput('*')">*</button>
+      </div>
+    </div> <!--buttons 4 5 6 * -->
+
+    <div class = "row">
+      <div class = "col">
+        <button class = "btn btn-default" onclick="getInput('1')">1</button>
+      </div>
+      <div class = "col">
+        <button class = "btn btn-default" onclick="getInput('2')">2</button>
+      </div>
+      <div class = "col">
+        <button class = "btn btn-default" onclick="getInput('3')">3</button>
+      </div>
+      <div class = "col">
+        <button class = "btn btn-default" onclick="getInput('-')">-</button>
+      </div>
+    </div> <!--buttons 1 2 3 - -->
+
+    <div class = "row">
+      <div class = "col-6">
+        <button class = "btn btn-default" onclick="getInput('0')">0</button>
+      </div>
+      <div class = "col-3">
+        <button class = "btn btn-default" onclick="getInput('.')">.</button>
+      </div>
+      <div class = "col-3">
+        <button class = "btn btn-default" onclick="getInput('+')">+</button>
+      </div>
+    </div> <!--buttons 0 . + -->
+    <div class = "row">
+      <div class = "col">
+        <button class = "btn btn-warning" onclick="getResult()">=</button>
+      </div>
+    </div> <!--= button -->
+  </div>
+
+  <footer>
+    <hr/>
+      <p>This is a <a href="https://www.freecodecamp.org/challenges/build-a-javascript-calculator" target="_blank" rel="noopener noreferrer">freeCodeCamp project</a>.
+      See my other work on my <a href="http://shoheishibata.com/categories/Programming/" target="_blank" rel="noopener noreferrer">website</a> as well as<a className="fa fa-github fa-2x" aria-hidden="true" href="https://github.com/shibatas/" target="_blank" rel="noopener noreferrer"></a>  and
+      <a className="fa fa-codepen fa-2x" aria-hidden="true" href="https://codepen.io/Shohei51/" target="_blank" rel="noopener noreferrer"></a>.</p>
+      <p>Shohei Shibata &#9426; copyright 2017</p>
+  </footer>
+
+</body>
+</html>
