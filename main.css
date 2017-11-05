@@ -63,8 +63,7 @@ footer {
   text-align: center;
 }
 
-.fa {
-  text-decoration: none;
-  color: black;
+.logo {
   padding: 5px;
+  margin-bottom: 5px;
 }
